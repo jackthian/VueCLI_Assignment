@@ -1,5 +1,6 @@
 <template>
   <div class="hello">
+    <b-container class="bv-example-row bv-example-row-flex-cols">
     <div class="heading">
       <div class="heading_main">
         <h1>Welcome to {{name}}</h1>
@@ -14,12 +15,13 @@
           <input type="tel" id="customer_hp" placeholder="01x-xxxxxxx" v-model="C_Number" >
         </div>
         <!-------------Button Submission-------->
-        <div class="button">
-          <button id="start" v-on:click="check_num(C_Number)">Submit</button>
+        <div class="btn">
+          <b-button variant="success" v-on:click="check_num(C_Number)">Submit</b-button>
           <p style="font-size: 15px"><a href="">Register New Member</a></p>
         </div>
       </div>
     </div>
+    </b-container>
   </div>
 </template>
 
@@ -114,25 +116,6 @@ input[type=tel]
   font-size: 20px;
   text-align: center;
 }
-
-input[type=submit]
-{
-  background-color:green;
-  font-family: Arial,sans-serif;
-  font-size: 25px;
-  padding:8px 20px;
-  width:20%;
-  color:white;
-  border-radius: 10px;
-}
-input[type=submit]:hover{
-  opacity: 70%;
-}
-.button
-{
-  text-align: center;
-  padding-bottom: 20px;
-}
 a
 {
   text-decoration: none;
@@ -142,15 +125,6 @@ a:hover
 {
   opacity: 70%;
   text-decoration: underline;
-}
-#start
-{
-  background-color:green;
-  font-size: 25px;
-  padding:8px 20px;
-  width:15%;
-  color:white;
-  border-radius: 5px;
 }
 body
 {

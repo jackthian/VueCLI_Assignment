@@ -1,9 +1,18 @@
 import Vue from 'vue'
+import { BootstrapVue, IconsPlugin } from 'bootstrap-vue'
+import 'bootstrap/dist/css/bootstrap.css'
+import 'bootstrap-vue/dist/bootstrap-vue.css'
+
 import VueRouter from 'vue-router'
 import Login from "@/components/Login";
 import point_collection from "@/components/point_collection";
 
 Vue.use(VueRouter)
+
+// Install BootstrapVue
+Vue.use(BootstrapVue)
+// Optionally install the BootstrapVue icon components plugin
+Vue.use(IconsPlugin)
 
 export default new VueRouter ({
   routes:[
