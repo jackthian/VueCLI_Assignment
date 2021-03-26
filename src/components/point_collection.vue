@@ -4,7 +4,7 @@
       <h1>Hi Jack</h1>
       <h1>HP : {{phone_num}}</h1>
       <h2>Total Visit : {{totalVisit}} times</h2>
-      <h2>Total points : {{totalPoints}}</h2>
+    <!--  <h2>Total points : {{totalPoints}}</h2>
     </div>
     <!----input points--->
     <div class="container_top">
@@ -25,7 +25,6 @@
           <p> Free 1 Cup of Coffee (100 points) <button id="minus_100" v-on:click="minus_100()">100</button></p>
           <p>Free 1 piece of Cake (150 points) <button id="minus_150" v-on:click="minus_150()">150</button></p>
         </div>
-
       </div>
     </div>
   </div>
